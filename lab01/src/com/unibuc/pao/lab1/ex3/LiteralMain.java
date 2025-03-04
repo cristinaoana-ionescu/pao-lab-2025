@@ -21,10 +21,13 @@ public class LiteralMain {
     static double doubleValue;
 
     // char
-    static char charValue; // '\u0000'
+    static char charValue; // default value: '\u0000'
 
     // boolean
     static boolean booleanValue;
+    
+    // Object
+    static Object objectValue;
     
     public static void main(String[] args) {
   
@@ -43,5 +46,7 @@ public class LiteralMain {
         System.out.println("charValue = " + charValue);
         
         System.out.println("booleanValue = " + booleanValue);
+        
+        System.out.println("objectValue = " + objectValue);
     } 
 }
