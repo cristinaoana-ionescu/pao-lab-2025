@@ -1,4 +1,4 @@
-package com.unibuc.pao.lab2.ex1;
+package lab2.ex1;
 
 public class ArraysMain {
 

@@ -1,4 +1,4 @@
-package com.unibuc.pao.lab2.ex3;
+package lab2.ex3;
 
 public abstract class AbstractClass {
 

@@ -1,6 +1,6 @@
-package com.unibuc.pao.lab2.ex3.ex3bis;
+package lab2.ex3.ex3bis;
 
-import com.unibuc.pao.lab2.ex3.ParentClass;
+import lab2.ex3.ParentClass;
 
 public class ChildClass extends ParentClass {
 

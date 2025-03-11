@@ -1,6 +1,6 @@
-package com.unibuc.pao.lab2.ex3;
+package lab2.ex3;
 
-import com.unibuc.pao.lab2.ex3.ex3bis.ChildClass;
+import lab2.ex3.ex3bis.ChildClass;
 
 public class Main {
 

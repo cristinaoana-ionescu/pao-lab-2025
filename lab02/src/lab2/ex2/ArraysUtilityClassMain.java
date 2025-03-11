@@ -1,4 +1,4 @@
-package com.unibuc.pao.lab2.ex2;
+package lab2.ex2;
 
 import java.util.Arrays;
 
