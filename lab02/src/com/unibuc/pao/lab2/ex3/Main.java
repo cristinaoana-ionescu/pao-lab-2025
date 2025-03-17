@@ -23,4 +23,15 @@ public class Main {
         // childObject.doSomethingDefault(); // cannot be accessed from outside package !
 
     }
+
+    private static void childObjectAccess() {
+        ChildClass childObject = new ChildClass(2);
+        System.out.println(childObject.protectedField);
+        childObject.getId();
+        childObject.doSomethingPublic();
+        childObject.doSomethingPublic(4);
+        childObject.doSomethingProtected();
+        ParentClass.staticDoSomethingPublic();
+        ChildClass.staticDoSomethingPublic();
+    }
 }

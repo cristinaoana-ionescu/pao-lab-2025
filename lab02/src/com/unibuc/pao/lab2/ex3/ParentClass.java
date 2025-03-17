@@ -4,8 +4,11 @@ public class ParentClass {
 
     private final int id;
 
-    private final static int staticId;
+    protected float protectedField;
 
+    double defaultField;
+
+    private final static int staticId;
 
 
     static {
@@ -16,8 +19,17 @@ public class ParentClass {
         this.id = id;
     }
 
-    public void doSomethingPublic() {
+    protected void doSomethingPublic() {
         System.out.println("ParentClass.doSomething()");
+    }
+
+    protected Number doSomethingProtected(Integer i, int j) throws Exception {
+        System.out.println("ParentClass.doSomething()");
+        return i + j;
+    }
+
+    public void doSomethingPublic(int i) {
+        System.out.println("ParentClass.doSomething() with int parameter");
     }
 
     protected void doSomethingProtected() {
@@ -28,7 +40,18 @@ public class ParentClass {
         System.out.println("ParentClass.doSomethingPrivate()");
     }
 
-    void doSomethingDefault() {
+    public final void doSomethingDefault() {
         System.out.println("ParentClass.doSomethingDefault()");
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    // static methods
+
+    public static void staticDoSomethingPublic() {
+        System.out.println("ParentClass.staticDoSomethingPublic()");
     }
 }
