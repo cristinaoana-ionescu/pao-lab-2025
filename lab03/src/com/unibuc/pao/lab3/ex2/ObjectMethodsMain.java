@@ -5,6 +5,7 @@ import com.unibuc.pao.lab3.ex1.Pet;
 
 public class ObjectMethodsMain {
 
+    // getClass()
     // toString()
     // equals()
     // hashCode()
