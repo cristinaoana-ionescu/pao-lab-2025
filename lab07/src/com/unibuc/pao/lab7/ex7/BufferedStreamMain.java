@@ -11,6 +11,7 @@ public class BufferedStreamMain {
     public static void main(String[] args) {
 
         File binaryFile = new File("lab07/src/com/unibuc/pao/lab7/ex7/binaryFile.bin");
+
         try (BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(binaryFile))) {
             String data = "Buffered file data\n";
             String data2 = "Other buffered file data";
