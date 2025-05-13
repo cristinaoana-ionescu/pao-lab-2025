@@ -1,5 +1,7 @@
 package com.unibuc.pao.lab7.ex8;
 
+import java.util.Objects;
+
 public class Student {
 
     private String cnp;
@@ -50,4 +52,17 @@ public class Student {
                 ", studyYear=" + studyYear +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return age == student.age && group == student.group && studyYear == student.studyYear && Objects.equals(cnp, student.cnp) && Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cnp, name, age, group, studyYear);
+    }
+
 }

@@ -11,7 +11,7 @@ EnumSet
 
 ## Exercitiul 3 - Colectii de tip Map
 
-Hashtable vs. HashMap  vs. TreeMap
+Hashtable vs. HashMap vs. TreeMap
 
 ## Exercitiul 4 - Colectii de tip Queue si Stack
 
