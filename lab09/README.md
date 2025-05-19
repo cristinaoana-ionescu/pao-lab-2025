@@ -3,6 +3,7 @@
 ## Exercitiul 1 - Serializare
 
 Interfata Serializable si clasele ObjectOutputStream si ObjectInputStream.
+Serial version UUID.
 Serializare custom folosind metodele:
 
 private void writeObject(ObjectOutputStream out) throws IOException
@@ -10,6 +11,11 @@ private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundE
 
 Campuri transient.
 
-## Exercitiul 2 - Fire de executie
+## Exercitiul 2 - Serializare custom folosind interfata Externalizable
 
-Thread vs. Runnable
+In clasa de serializat implementati interfata Externalizable si metodele:
+
+void writeExternal(ObjectOutput out) throws IOException
+void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
+
+
